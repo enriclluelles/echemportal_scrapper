@@ -1,0 +1,734 @@
+<?xml version="1.0"?>
+<!-- Created: Tue Sep 18 06:56:39 EEST 2018 by eChemPortal. -->
+<expression>
+  <version>1.0</version>
+  <blocks>
+    <queryblock level="0" section="EC_CHRONFISHTOX" text="Long-term toxicity to fish">
+      <path>
+        <pathelement id="TR.SE00.00"/>
+        <pathelement id="QU.SE.DATA_ECO"/>
+        <pathelement id="QU.SE.ENV_AQUATIC"/>
+        <pathelement id="QU.SE.EC_CHRONFISHTOX"/>
+      </path>
+      <criteria>
+        <string id="SE.REF.0180" fieldname="EC_CHRONFISHTOX.ADMIN.STUDYRESULTTYPE" label="Study result type">
+          <value operator="EQUALS" expression="experimental result"/>
+        </string>
+        <string id="SE.REF.0200" fieldname="EC_CHRONFISHTOX.ADMIN.RELIABILITY" label="Reliability">
+          <value operator="EQUALS" expression="1 (reliable without restriction)"/>
+          <value operator="EQUALS" expression="2 (reliable with restrictions)"/>
+          <value operator="EQUALS" expression="3 (not reliable)"/>
+          <value operator="EQUALS" expression="4 (not assignable)"/>
+        </string>
+        <string id="SE06.01.02.0360" fieldname="EC_CHRONFISHTOX.GUIDELINE.QUALIFIER" label="Test guideline, Qualifier">
+          <value operator="EQUALS" expression="according to"/>
+          <value operator="EQUALS" expression="equivalent or similar to"/>
+        </string>
+        <string id="SE06.01.02.0370" fieldname="EC_CHRONFISHTOX.GUIDELINE.PHRASEOTHER_GUIDELINE" label="Test guideline, Guideline">
+          <value operator="EQUALS" expression="EPA OPPTS 850.1400 (Fish Early-life Stage Toxicity Test)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1000 (Fish Early-life Stage Toxicity Test)"/>
+          <value operator="EQUALS" expression="OECD Guideline 210 (Fish, Early-Life Stage Toxicity Test)"/>
+        </string>
+        <string id="SE06.01.02.0520" fieldname="EC_CHRONFISHTOX.ORGANISM.PHRASEOTHER_LIST_POP" label="Test organisms (species)">
+          <value operator="EQUALS" expression="Alburnus albidus costa"/>
+          <value operator="EQUALS" expression="Alburnus alburnus"/>
+          <value operator="EQUALS" expression="Alburnus lucidus"/>
+          <value operator="EQUALS" expression="Alburnus sp."/>
+          <value operator="EQUALS" expression="Alosa pseudobarengus"/>
+          <value operator="EQUALS" expression="Anchoa mitchilli"/>
+          <value operator="EQUALS" expression="Anguilla anguilla"/>
+          <value operator="EQUALS" expression="Anguilla japonica"/>
+          <value operator="EQUALS" expression="Anguilla rostrata"/>
+          <value operator="EQUALS" expression="Anguilla sp."/>
+          <value operator="EQUALS" expression="Barbus barbus"/>
+          <value operator="EQUALS" expression="Brachydanio rerio (new name: Danio rerio)"/>
+          <value operator="EQUALS" expression="Brevoortia patronus"/>
+          <value operator="EQUALS" expression="Brevoortia tyrannus"/>
+          <value operator="EQUALS" expression="Carassius auratus"/>
+          <value operator="EQUALS" expression="Carassius carassius"/>
+          <value operator="EQUALS" expression="Carassius sp."/>
+          <value operator="EQUALS" expression="Carassius vulgaris"/>
+          <value operator="EQUALS" expression="Catostomus commersoni"/>
+          <value operator="EQUALS" expression="Centropomus undecimalis"/>
+          <value operator="EQUALS" expression="Centropristis striata"/>
+          <value operator="EQUALS" expression="Clupea harengus"/>
+          <value operator="EQUALS" expression="Colisa fasciatus"/>
+          <value operator="EQUALS" expression="Coregonus artedii"/>
+          <value operator="EQUALS" expression="Coregonus clupeaformis"/>
+          <value operator="EQUALS" expression="Ctenopharyngodon idella"/>
+          <value operator="EQUALS" expression="Cymatogaster aggregata"/>
+          <value operator="EQUALS" expression="Cynoscion nebulosus"/>
+          <value operator="EQUALS" expression="Cyprinodon sp."/>
+          <value operator="EQUALS" expression="Cyprinodon variegatus"/>
+          <value operator="EQUALS" expression="Cyprinus auratus"/>
+          <value operator="EQUALS" expression="Cyprinus carassius"/>
+          <value operator="EQUALS" expression="Cyprinus carpio"/>
+          <value operator="EQUALS" expression="Cyprinus sp."/>
+          <value operator="EQUALS" expression="Danio rerio"/>
+          <value operator="EQUALS" expression="Danio rerio (reported as Brachydanio rerio)"/>
+          <value operator="EQUALS" expression="Dorosoma petenese"/>
+          <value operator="EQUALS" expression="Esox lucius"/>
+          <value operator="EQUALS" expression="Esox masquinongi"/>
+          <value operator="EQUALS" expression="Esox niger"/>
+          <value operator="EQUALS" expression="Esox sp."/>
+          <value operator="EQUALS" expression="Fundulus confluentus"/>
+          <value operator="EQUALS" expression="Fundulus diaphanus"/>
+          <value operator="EQUALS" expression="Fundulus grandis"/>
+          <value operator="EQUALS" expression="Fundulus heteroclitus"/>
+          <value operator="EQUALS" expression="Fundulus jenkinsi"/>
+          <value operator="EQUALS" expression="Fundulus lucidae"/>
+          <value operator="EQUALS" expression="Fundulus majalis"/>
+          <value operator="EQUALS" expression="Fundulus similis"/>
+          <value operator="EQUALS" expression="Fundulus sp."/>
+          <value operator="EQUALS" expression="Gadus morrhua"/>
+          <value operator="EQUALS" expression="Gambusia affinis"/>
+          <value operator="EQUALS" expression="Gasterosteus aculeatus"/>
+          <value operator="EQUALS" expression="Gaus mexlaughs"/>
+          <value operator="EQUALS" expression="Harengula pensacolae"/>
+          <value operator="EQUALS" expression="Ictalurus catus"/>
+          <value operator="EQUALS" expression="Ictalurus furcatus"/>
+          <value operator="EQUALS" expression="Ictalurus melas"/>
+          <value operator="EQUALS" expression="Ictalurus natalis"/>
+          <value operator="EQUALS" expression="Ictalurus nebulosus"/>
+          <value operator="EQUALS" expression="Ictalurus punctatus"/>
+          <value operator="EQUALS" expression="Ictalurus sp."/>
+          <value operator="EQUALS" expression="Idus idus"/>
+          <value operator="EQUALS" expression="Jordanella floridae"/>
+          <value operator="EQUALS" expression="Lagodon rhomboides"/>
+          <value operator="EQUALS" expression="Lebistes reticulatus"/>
+          <value operator="EQUALS" expression="Leiostomus xanthurus"/>
+          <value operator="EQUALS" expression="Lepomis auritus"/>
+          <value operator="EQUALS" expression="Lepomis cyanellus"/>
+          <value operator="EQUALS" expression="Lepomis gibbosus"/>
+          <value operator="EQUALS" expression="Lepomis humilis"/>
+          <value operator="EQUALS" expression="Lepomis macrochirus"/>
+          <value operator="EQUALS" expression="Lepomis microlophus"/>
+          <value operator="EQUALS" expression="Lepomis pallidus"/>
+          <value operator="EQUALS" expression="Lepomis sp."/>
+          <value operator="EQUALS" expression="Leuciscus cephalus cabeda rissa"/>
+          <value operator="EQUALS" expression="Leuciscus idus"/>
+          <value operator="EQUALS" expression="Leuciscus idus melanotus"/>
+          <value operator="EQUALS" expression="Leuciscus rutilus"/>
+          <value operator="EQUALS" expression="Leuciscus sp."/>
+          <value operator="EQUALS" expression="Limanda aspera"/>
+          <value operator="EQUALS" expression="Limanda limanda"/>
+          <value operator="EQUALS" expression="Limanda sp."/>
+          <value operator="EQUALS" expression="Menidia beryllina"/>
+          <value operator="EQUALS" expression="Menidia menidia"/>
+          <value operator="EQUALS" expression="Menidia peninsulae"/>
+          <value operator="EQUALS" expression="Menidia sp."/>
+          <value operator="EQUALS" expression="Micropogon undulatus"/>
+          <value operator="EQUALS" expression="Micropterus dolomieui"/>
+          <value operator="EQUALS" expression="Micropterus salmoides"/>
+          <value operator="EQUALS" expression="Micropterus sp."/>
+          <value operator="EQUALS" expression="Misgurnus anguillicaudatus"/>
+          <value operator="EQUALS" expression="Morone chrysops"/>
+          <value operator="EQUALS" expression="Morone saxatilis"/>
+          <value operator="EQUALS" expression="Morone sp."/>
+          <value operator="EQUALS" expression="Mugil cephalus"/>
+          <value operator="EQUALS" expression="Mugil curema"/>
+          <value operator="EQUALS" expression="Mugil sp."/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="Notropis atherinoides"/>
+          <value operator="EQUALS" expression="Oncorhynchus gorbuscha"/>
+          <value operator="EQUALS" expression="Oncorhynchus keta"/>
+          <value operator="EQUALS" expression="Oncorhynchus kisutch"/>
+          <value operator="EQUALS" expression="Oncorhynchus mykiss"/>
+          <value operator="EQUALS" expression="Oncorhynchus mykiss (reported as Salmo gairdneri)"/>
+          <value operator="EQUALS" expression="Oncorhynchus nerka"/>
+          <value operator="EQUALS" expression="Oncorhynchus nerka kennerlyi"/>
+          <value operator="EQUALS" expression="Oncorhynchus sp."/>
+          <value operator="EQUALS" expression="Oncorhynchus tschawytscha"/>
+          <value operator="EQUALS" expression="Oryzias latipes"/>
+          <value operator="EQUALS" expression="Osmerus mordax"/>
+          <value operator="EQUALS" expression="Parophrys vetulus"/>
+          <value operator="EQUALS" expression="Perca flavescens"/>
+          <value operator="EQUALS" expression="Perca fluviatilis"/>
+          <value operator="EQUALS" expression="Perca sp."/>
+          <value operator="EQUALS" expression="Petromyzon fluviatilis"/>
+          <value operator="EQUALS" expression="Petromyzon marinus"/>
+          <value operator="EQUALS" expression="Petromyzon sp."/>
+          <value operator="EQUALS" expression="Phoxinus laevis"/>
+          <value operator="EQUALS" expression="Phoxinus phoxinus"/>
+          <value operator="EQUALS" expression="Phoxinus sp."/>
+          <value operator="EQUALS" expression="Pimephales notatus"/>
+          <value operator="EQUALS" expression="Pimephales promelas"/>
+          <value operator="EQUALS" expression="Pimephales sp."/>
+          <value operator="EQUALS" expression="Platypoecilus maculatus"/>
+          <value operator="EQUALS" expression="Pleuronectes platessa"/>
+          <value operator="EQUALS" expression="Poecilia latipinna"/>
+          <value operator="EQUALS" expression="Poecilia reticulata"/>
+          <value operator="EQUALS" expression="Poecilia sp."/>
+          <value operator="EQUALS" expression="Pogonias cromis"/>
+          <value operator="EQUALS" expression="Pomatomus saltatrix"/>
+          <value operator="EQUALS" expression="Pomoxis annularis"/>
+          <value operator="EQUALS" expression="Pomoxis nigromaculatus"/>
+          <value operator="EQUALS" expression="Prosopium williamsoni"/>
+          <value operator="EQUALS" expression="Pseudopleuronectes americanus"/>
+          <value operator="EQUALS" expression="Ptychocheilus oregonensis"/>
+          <value operator="EQUALS" expression="Rasbora heteromorpha"/>
+          <value operator="EQUALS" expression="Rhodeus sericeus"/>
+          <value operator="EQUALS" expression="Roccus americanus"/>
+          <value operator="EQUALS" expression="Rutilus rutilus"/>
+          <value operator="EQUALS" expression="Salmo aquabonita"/>
+          <value operator="EQUALS" expression="Salmo clarki"/>
+          <value operator="EQUALS" expression="Salmo gairdneri (new name: Oncorhynchus mykiss)"/>
+          <value operator="EQUALS" expression="Salmo irideus"/>
+          <value operator="EQUALS" expression="Salmo salar"/>
+          <value operator="EQUALS" expression="Salmo sp."/>
+          <value operator="EQUALS" expression="Salmo trutta"/>
+          <value operator="EQUALS" expression="Salvelinus alpinus"/>
+          <value operator="EQUALS" expression="Salvelinus fontinalis"/>
+          <value operator="EQUALS" expression="Salvelinus malma"/>
+          <value operator="EQUALS" expression="Salvelinus namaycush"/>
+          <value operator="EQUALS" expression="Salvelinus sp."/>
+          <value operator="EQUALS" expression="Sardinops sagax"/>
+          <value operator="EQUALS" expression="Sarotherodon mossambicus"/>
+          <value operator="EQUALS" expression="Scardinius erythrophthalmus"/>
+          <value operator="EQUALS" expression="Sciaenops ocellata"/>
+          <value operator="EQUALS" expression="Semolitus atromaculatus"/>
+          <value operator="EQUALS" expression="Sphaeroidus maculatus"/>
+          <value operator="EQUALS" expression="Stizostedion canadense"/>
+          <value operator="EQUALS" expression="Stizostedion v. vitreum"/>
+          <value operator="EQUALS" expression="Tinca sp."/>
+          <value operator="EQUALS" expression="Tinca tinca"/>
+          <value operator="EQUALS" expression="Tinca vulgaris"/>
+          <value operator="EQUALS" expression="Trutta iridea"/>
+          <value operator="LIKE" expression="other:*"/>
+        </string>
+        <numeric id="SE06.01.02.0570" fieldname="EC_CHRONFISHTOX.EXP_DURATION.VALUEUNIT_VALUE" label="Total exposure duration">
+          <value operator="GT" expression="0.0">
+            <unit phrasegroup="E15" phrase="2113"/>
+          </value>
+        </numeric>
+        <string id="SE06.01.02.0720" fieldname="EC_CHRONFISHTOX.EFFCONC.PHRASEOTHER_ENDPOINT" label="Effect concentrations, Endpoint">
+          <value operator="EQUALS" expression="EC10"/>
+          <value operator="EQUALS" expression="EC50"/>
+          <value operator="EQUALS" expression="LC10"/>
+          <value operator="EQUALS" expression="LC50"/>
+          <value operator="EQUALS" expression="LOEC"/>
+          <value operator="EQUALS" expression="NOEC"/>
+        </string>
+        <range id="SE06.01.02.0730" fieldname="EC_CHRONFISHTOX.EFFCONC.PRECISION_CONC_LOQUALIFIER" label="Effect concentrations, Effect conc.">
+          <value operator="OVERLAPPING" lower="0.0" upper="100000.0">
+            <unit phrasegroup="E05" phrase="2098"/>
+          </value>
+        </range>
+        <string id="SE06.01.02.0800" fieldname="EC_CHRONFISHTOX.EFFCONC.PHRASEOTHER_BASIS_EFFECT" label="Effect concentrations, Basis for effect">
+          <value operator="EQUALS" expression="adult behaviour"/>
+          <value operator="EQUALS" expression="adult mortality"/>
+          <value operator="EQUALS" expression="behaviour"/>
+          <value operator="EQUALS" expression="fertility"/>
+          <value operator="EQUALS" expression="gonadal histology"/>
+          <value operator="EQUALS" expression="growth rate"/>
+          <value operator="EQUALS" expression="larval development"/>
+          <value operator="EQUALS" expression="length"/>
+          <value operator="EQUALS" expression="morphology"/>
+          <value operator="EQUALS" expression="mortality"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="number hatched"/>
+          <value operator="EQUALS" expression="number of eggs/spawn"/>
+          <value operator="EQUALS" expression="number of spawns"/>
+          <value operator="EQUALS" expression="reproduction"/>
+          <value operator="EQUALS" expression="secondary sexual characteristics"/>
+          <value operator="EQUALS" expression="time to hatch"/>
+          <value operator="EQUALS" expression="time to swim up"/>
+          <value operator="EQUALS" expression="weight"/>
+          <value operator="EQUALS" expression="other:"/>
+        </string>
+      </criteria>
+    </queryblock>
+    <operator level="0" op="AND"/>
+    <queryblock level="1" section="EC_CHRONDAPHNIATOX" text="Long-term toxicity to aquatic invertebrates">
+      <path>
+        <pathelement id="TR.SE00.00"/>
+        <pathelement id="QU.SE.DATA_ECO"/>
+        <pathelement id="QU.SE.ENV_AQUATIC"/>
+        <pathelement id="QU.SE.EC_CHRONDAPHNIATOX"/>
+      </path>
+      <criteria>
+        <string id="SE.REF.0180" fieldname="EC_CHRONDAPHNIATOX.ADMIN.STUDYRESULTTYPE" label="Study result type">
+          <value operator="EQUALS" expression="experimental result"/>
+        </string>
+        <string id="SE.REF.0200" fieldname="EC_CHRONDAPHNIATOX.ADMIN.RELIABILITY" label="Reliability">
+          <value operator="EQUALS" expression="1 (reliable without restriction)"/>
+          <value operator="EQUALS" expression="2 (reliable with restrictions)"/>
+          <value operator="EQUALS" expression="3 (not reliable)"/>
+          <value operator="EQUALS" expression="4 (not assignable)"/>
+        </string>
+        <string id="SE06.01.04.0350" fieldname="EC_CHRONDAPHNIATOX.GUIDELINE.QUALIFIER" label="Test guideline, Qualifier">
+          <value operator="EQUALS" expression="according to"/>
+          <value operator="EQUALS" expression="equivalent or similar to"/>
+        </string>
+        <string id="SE06.01.04.0360" fieldname="EC_CHRONDAPHNIATOX.GUIDELINE.PHRASEOTHER_GUIDELINE" label="Test guideline, Guideline">
+          <value operator="EQUALS" expression="EPA OPPTS 850.1300 (Daphnid Chronic Toxicity Test)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1330 (Daphnid Chronic Toxicity Test)"/>
+          <value operator="EQUALS" expression="EU Method C.20 (Daphnia magna Reproduction Test)"/>
+          <value operator="EQUALS" expression="OECD Guideline 211 (Daphnia magna Reproduction Test)"/>
+        </string>
+        <string id="SE06.01.04.0510" fieldname="EC_CHRONDAPHNIATOX.ORGANISM.PHRASEOTHER_LIST_POP" label="Test organisms (species)">
+          <value operator="EQUALS" expression="Americamysis bahia"/>
+          <value operator="EQUALS" expression="Americamysis bahia (reported as Mysidopsis bahia)"/>
+          <value operator="EQUALS" expression="Artemia salina"/>
+          <value operator="EQUALS" expression="Artemia sp."/>
+          <value operator="EQUALS" expression="Asellus intermedius"/>
+          <value operator="EQUALS" expression="Asellus sp."/>
+          <value operator="EQUALS" expression="Ceriodaphnia dubia"/>
+          <value operator="EQUALS" expression="Ceriodaphnia sp."/>
+          <value operator="EQUALS" expression="Crangon crangon"/>
+          <value operator="EQUALS" expression="Crangon septemspinosa"/>
+          <value operator="EQUALS" expression="Crangon sp."/>
+          <value operator="EQUALS" expression="Daphnia cucullata"/>
+          <value operator="EQUALS" expression="Daphnia magna"/>
+          <value operator="EQUALS" expression="Daphnia pulex"/>
+          <value operator="EQUALS" expression="Daphnia pulicaria"/>
+          <value operator="EQUALS" expression="Daphnia sp."/>
+          <value operator="EQUALS" expression="Elasmopus pectenicrus"/>
+          <value operator="EQUALS" expression="Elasmopus sp."/>
+          <value operator="EQUALS" expression="Gammarus fasciatus"/>
+          <value operator="EQUALS" expression="Gammarus lacustris"/>
+          <value operator="EQUALS" expression="Gammarus minus"/>
+          <value operator="EQUALS" expression="Gammarus olivii"/>
+          <value operator="EQUALS" expression="Gammarus pulex"/>
+          <value operator="EQUALS" expression="Gammarus sp."/>
+          <value operator="EQUALS" expression="Idotea balthica basteri"/>
+          <value operator="EQUALS" expression="Mysidopsis bahia (new name: Americamysis bahia)"/>
+          <value operator="EQUALS" expression="Nitocra spinipes"/>
+          <value operator="EQUALS" expression="Pagurus logicarpus"/>
+          <value operator="EQUALS" expression="Palaemonetes pugio"/>
+          <value operator="EQUALS" expression="Palaemonetes vulgaris"/>
+          <value operator="EQUALS" expression="Simocephalus serrulatus"/>
+          <value operator="EQUALS" expression="Sphaeroma serratum"/>
+          <value operator="LIKE" expression="other:*"/>
+          <value operator="LIKE" expression="other aquatic arthropod:*"/>
+          <value operator="LIKE" expression="other aquatic crustacea:*"/>
+          <value operator="LIKE" expression="other aquatic mollusc:*"/>
+          <value operator="LIKE" expression="other aquatic worm:*"/>
+        </string>
+        <numeric id="SE06.01.04.0560" fieldname="EC_CHRONDAPHNIATOX.EXP_DURATION.VALUEUNIT_VALUE" label="Total exposure duration">
+          <value operator="GT" expression="0.0">
+            <unit phrasegroup="E15" phrase="2113"/>
+          </value>
+        </numeric>
+        <string id="SE06.01.04.0710" fieldname="EC_CHRONDAPHNIATOX.EFFCONC.PHRASEOTHER_ENDPOINT" label="Effect concentrations, Endpoint">
+          <value operator="EQUALS" expression="EC10"/>
+          <value operator="EQUALS" expression="EC50"/>
+          <value operator="EQUALS" expression="IC10"/>
+          <value operator="EQUALS" expression="IC50"/>
+          <value operator="EQUALS" expression="LC10"/>
+          <value operator="EQUALS" expression="LC50"/>
+          <value operator="EQUALS" expression="LOEC"/>
+          <value operator="EQUALS" expression="NOEC"/>
+        </string>
+        <range id="SE06.01.04.0720" fieldname="EC_CHRONDAPHNIATOX.EFFCONC.PRECISION_LOQUALIFIER" label="Effect concentrations, Effect conc.">
+          <value operator="OVERLAPPING" lower="0.0" upper="100000.0">
+            <unit phrasegroup="E05" phrase="2098"/>
+          </value>
+        </range>
+        <string id="SE06.01.04.0790" fieldname="EC_CHRONDAPHNIATOX.EFFCONC.PHRASEOTHER_BASIS_EFFECT" label="Effect concentrations, Basis for effect">
+          <value operator="EQUALS" expression="behaviour"/>
+          <value operator="EQUALS" expression="growth"/>
+          <value operator="EQUALS" expression="immobilisation"/>
+          <value operator="EQUALS" expression="morphology"/>
+          <value operator="EQUALS" expression="mortality"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="reproduction"/>
+          <value operator="EQUALS" expression="other:"/>
+        </string>
+      </criteria>
+    </queryblock>
+    <operator level="1" op="OR"/>
+    <queryblock level="1" section="EC_DAPHNIATOX" text="Short-term toxicity to aquatic invertebrates">
+      <path>
+        <pathelement id="TR.SE00.00"/>
+        <pathelement id="QU.SE.DATA_ECO"/>
+        <pathelement id="QU.SE.ENV_AQUATIC"/>
+        <pathelement id="QU.SE.EC_DAPHNIATOX"/>
+      </path>
+      <criteria>
+        <string id="SE.REF.0180" fieldname="EC_DAPHNIATOX.ADMIN.STUDYRESULTTYPE" label="Study result type">
+          <value operator="EQUALS" expression="experimental result"/>
+        </string>
+        <string id="SE.REF.0200" fieldname="EC_DAPHNIATOX.ADMIN.RELIABILITY" label="Reliability">
+          <value operator="EQUALS" expression="1 (reliable without restriction)"/>
+          <value operator="EQUALS" expression="2 (reliable with restrictions)"/>
+          <value operator="EQUALS" expression="3 (not reliable)"/>
+          <value operator="EQUALS" expression="4 (not assignable)"/>
+        </string>
+        <string id="SE06.01.03.0350" fieldname="EC_DAPHNIATOX.GUIDELINE.QUALIFIER" label="Test guideline, Qualifier">
+          <value operator="EQUALS" expression="according to"/>
+          <value operator="EQUALS" expression="equivalent or similar to"/>
+        </string>
+        <string id="SE06.01.03.0360" fieldname="EC_DAPHNIATOX.GUIDELINE.PHRASEOTHER_GUIDELINE" label="Test guideline, Guideline">
+          <value operator="EQUALS" expression="EPA OPPTS 850.1010 (Aquatic Invertebrate Acute Toxicity Test, Freshwater Daphnids)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1300 (Aquatic Invertebrate Acute Toxicity Test, Freshwater Daphnids)"/>
+          <value operator="EQUALS" expression="EU Method C.2 (Acute Toxicity for Daphnia)"/>
+          <value operator="EQUALS" expression="OECD Guideline 202 (Daphnia sp. Acute Immobilisation Test)"/>
+        </string>
+        <string id="SE06.01.03.0510" fieldname="EC_DAPHNIATOX.ORGANISM.PHRASEOTHER_LIST_POP" label="Test organisms (species)">
+          <value operator="EQUALS" expression="Americamysis bahia"/>
+          <value operator="EQUALS" expression="Americamysis bahia (reported as Mysidopsis bahia)"/>
+          <value operator="EQUALS" expression="Artemia salina"/>
+          <value operator="EQUALS" expression="Artemia sp."/>
+          <value operator="EQUALS" expression="Asellus intermedius"/>
+          <value operator="EQUALS" expression="Asellus sp."/>
+          <value operator="EQUALS" expression="Ceriodaphnia dubia"/>
+          <value operator="EQUALS" expression="Ceriodaphnia sp."/>
+          <value operator="EQUALS" expression="Crangon crangon"/>
+          <value operator="EQUALS" expression="Crangon septemspinosa"/>
+          <value operator="EQUALS" expression="Crangon sp."/>
+          <value operator="EQUALS" expression="Daphnia cucullata"/>
+          <value operator="EQUALS" expression="Daphnia magna"/>
+          <value operator="EQUALS" expression="Daphnia pulex"/>
+          <value operator="EQUALS" expression="Daphnia pulicaria"/>
+          <value operator="EQUALS" expression="Daphnia sp."/>
+          <value operator="EQUALS" expression="Elasmopus pectenicrus"/>
+          <value operator="EQUALS" expression="Elasmopus sp."/>
+          <value operator="EQUALS" expression="Gammarus fasciatus"/>
+          <value operator="EQUALS" expression="Gammarus lacustris"/>
+          <value operator="EQUALS" expression="Gammarus minus"/>
+          <value operator="EQUALS" expression="Gammarus olivii"/>
+          <value operator="EQUALS" expression="Gammarus pulex"/>
+          <value operator="EQUALS" expression="Gammarus sp."/>
+          <value operator="EQUALS" expression="Idotea balthica basteri"/>
+          <value operator="EQUALS" expression="Mysidopsis bahia (new name: Americamysis bahia)"/>
+          <value operator="EQUALS" expression="Nitocra spinipes"/>
+          <value operator="EQUALS" expression="Pagurus logicarpus"/>
+          <value operator="EQUALS" expression="Palaemonetes pugio"/>
+          <value operator="EQUALS" expression="Palaemonetes vulgaris"/>
+          <value operator="EQUALS" expression="Simocephalus serrulatus"/>
+          <value operator="EQUALS" expression="Sphaeroma serratum"/>
+          <value operator="LIKE" expression="other:*"/>
+          <value operator="LIKE" expression="other aquatic arthropod:*"/>
+          <value operator="LIKE" expression="other aquatic crustacea:*"/>
+          <value operator="LIKE" expression="other aquatic mollusc:*"/>
+          <value operator="LIKE" expression="other aquatic worm:*"/>
+        </string>
+        <numeric id="SE06.01.03.0560" fieldname="EC_DAPHNIATOX.EXP_DURATION.VALUEUNIT_VALUE" label="Total exposure duration">
+          <value operator="GT" expression="0.0">
+            <unit phrasegroup="E04" phrase="2113"/>
+          </value>
+        </numeric>
+        <string id="SE06.01.03.0710" fieldname="EC_DAPHNIATOX.EFFCONC.PHRASEOTHER_ENDPOINT" label="Effect concentrations, Endpoint">
+          <value operator="EQUALS" expression="EC10"/>
+          <value operator="EQUALS" expression="EC50"/>
+          <value operator="EQUALS" expression="IC10"/>
+          <value operator="EQUALS" expression="IC50"/>
+          <value operator="EQUALS" expression="LC10"/>
+          <value operator="EQUALS" expression="LC50"/>
+          <value operator="EQUALS" expression="LOEC"/>
+          <value operator="EQUALS" expression="NOEC"/>
+        </string>
+        <range id="SE06.01.03.0720" fieldname="EC_DAPHNIATOX.EFFCONC.PRECISION_LOQUALIFIER" label="Effect concentrations, Effect conc.">
+          <value operator="OVERLAPPING" lower="0.0" upper="100000.0">
+            <unit phrasegroup="E05" phrase="2098"/>
+          </value>
+        </range>
+        <string id="SE06.01.03.0790" fieldname="EC_DAPHNIATOX.EFFCONC.PHRASEOTHER_BASIS_EFFECT" label="Effect concentrations, Basis for effect">
+          <value operator="EQUALS" expression="behaviour"/>
+          <value operator="EQUALS" expression="mobility"/>
+          <value operator="EQUALS" expression="morphology"/>
+          <value operator="EQUALS" expression="mortality"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="weight"/>
+          <value operator="EQUALS" expression="other:"/>
+        </string>
+      </criteria>
+    </queryblock>
+    <operator level="1" op="OR"/>
+    <queryblock level="1" section="EC_FISHTOX" text="Short-term toxicity to fish">
+      <path>
+        <pathelement id="TR.SE00.00"/>
+        <pathelement id="QU.SE.DATA_ECO"/>
+        <pathelement id="QU.SE.ENV_AQUATIC"/>
+        <pathelement id="QU.SE.EC_FISHTOX"/>
+      </path>
+      <criteria>
+        <string id="SE.REF.0180" fieldname="EC_FISHTOX.ADMIN.STUDYRESULTTYPE" label="Study result type">
+          <value operator="EQUALS" expression="experimental result"/>
+        </string>
+        <string id="SE.REF.0200" fieldname="EC_FISHTOX.ADMIN.RELIABILITY" label="Reliability">
+          <value operator="EQUALS" expression="1 (reliable without restriction)"/>
+          <value operator="EQUALS" expression="2 (reliable with restrictions)"/>
+          <value operator="EQUALS" expression="3 (not reliable)"/>
+          <value operator="EQUALS" expression="4 (not assignable)"/>
+        </string>
+        <string id="SE06.01.01.0350" fieldname="EC_FISHTOX.GUIDELINE.QUALIFIER" label="Test guideline, Qualifier">
+          <value operator="EQUALS" expression="according to"/>
+          <value operator="EQUALS" expression="equivalent or similar to"/>
+        </string>
+        <string id="SE06.01.01.0360" fieldname="EC_FISHTOX.GUIDELINE.PHRASEOTHER_GUIDELINE" label="Test guideline, Guideline">
+          <value operator="EQUALS" expression="EPA OPP 72-1 (Fish Acute Toxicity Test)"/>
+          <value operator="EQUALS" expression="EPA OPPTS 850.1075 (Freshwater and Saltwater Fish Acute Toxicity Test)"/>
+          <value operator="EQUALS" expression="EPA OPPTS 850.1085 (Fish Acute Toxicity Test mitigated by humic acid)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1400 (Fish Acute Toxicity Test)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1460 (Fish Acute Toxicity Test mitigated by humic acid)"/>
+          <value operator="EQUALS" expression="EU Method C.1 (Acute Toxicity for Fish)"/>
+          <value operator="EQUALS" expression="ISO 7346/1-3 (Determination of the Acute Lethal Toxicity of Substances to a Freshwater Fish [Brachydanio rerio Hamilton-Buchanan (Teleostei, Cyprinidae)])"/>
+          <value operator="EQUALS" expression="ISO 7346-1 (Determination of the Acute Lethal Toxicity of Substances to a Freshwater Fish [Brachydanio rerio Hamilton-Buchanan (Teleostei, Cyprinidae)] - Part 1: Static Method)"/>
+          <value operator="EQUALS" expression="ISO 7346-1 (Determination of the Acute Lethal Toxicity of Substances to a Freshwater Fish [Brachydanio rerio Hamilton-Buchanan (Teleostei, Cyprinidae)] - Part 2: Semi-static method)"/>
+          <value operator="EQUALS" expression="ISO 7346-1 (Determination of the Acute Lethal Toxicity of Substances to a Freshwater Fish [Brachydanio rerio Hamilton-Buchanan (Teleostei, Cyprinidae)] - Part 3: Flow-through method)"/>
+          <value operator="EQUALS" expression="OECD Guideline 203 (Fish, Acute Toxicity Test)"/>
+        </string>
+        <string id="SE06.01.01.0510" fieldname="EC_FISHTOX.ORGANISM.PHRASEOTHER_LIST_POP" label="Test organisms (species)">
+          <value operator="EQUALS" expression="Alburnus albidus costa"/>
+          <value operator="EQUALS" expression="Alburnus alburnus"/>
+          <value operator="EQUALS" expression="Alburnus lucidus"/>
+          <value operator="EQUALS" expression="Alburnus sp."/>
+          <value operator="EQUALS" expression="Alosa pseudobarengus"/>
+          <value operator="EQUALS" expression="Anchoa mitchilli"/>
+          <value operator="EQUALS" expression="Anguilla anguilla"/>
+          <value operator="EQUALS" expression="Anguilla japonica"/>
+          <value operator="EQUALS" expression="Anguilla rostrata"/>
+          <value operator="EQUALS" expression="Anguilla sp."/>
+          <value operator="EQUALS" expression="Barbus barbus"/>
+          <value operator="EQUALS" expression="Brachydanio rerio (new name: Danio rerio)"/>
+          <value operator="EQUALS" expression="Brevoortia patronus"/>
+          <value operator="EQUALS" expression="Brevoortia tyrannus"/>
+          <value operator="EQUALS" expression="Carassius auratus"/>
+          <value operator="EQUALS" expression="Carassius carassius"/>
+          <value operator="EQUALS" expression="Carassius sp."/>
+          <value operator="EQUALS" expression="Carassius vulgaris"/>
+          <value operator="EQUALS" expression="Catostomus commersoni"/>
+          <value operator="EQUALS" expression="Centropomus undecimalis"/>
+          <value operator="EQUALS" expression="Centropristis striata"/>
+          <value operator="EQUALS" expression="Clupea harengus"/>
+          <value operator="EQUALS" expression="Colisa fasciatus"/>
+          <value operator="EQUALS" expression="Coregonus artedii"/>
+          <value operator="EQUALS" expression="Coregonus clupeaformis"/>
+          <value operator="EQUALS" expression="Ctenopharyngodon idella"/>
+          <value operator="EQUALS" expression="Cymatogaster aggregata"/>
+          <value operator="EQUALS" expression="Cynoscion nebulosus"/>
+          <value operator="EQUALS" expression="Cyprinodon sp."/>
+          <value operator="EQUALS" expression="Cyprinodon variegatus"/>
+          <value operator="EQUALS" expression="Cyprinus auratus"/>
+          <value operator="EQUALS" expression="Cyprinus carassius"/>
+          <value operator="EQUALS" expression="Cyprinus carpio"/>
+          <value operator="EQUALS" expression="Cyprinus sp."/>
+          <value operator="EQUALS" expression="Danio rerio"/>
+          <value operator="EQUALS" expression="Danio rerio (reported as Brachydanio rerio)"/>
+          <value operator="EQUALS" expression="Dorosoma petenese"/>
+          <value operator="EQUALS" expression="Esox lucius"/>
+          <value operator="EQUALS" expression="Esox masquinongi"/>
+          <value operator="EQUALS" expression="Esox niger"/>
+          <value operator="EQUALS" expression="Esox sp."/>
+          <value operator="EQUALS" expression="Fundulus confluentus"/>
+          <value operator="EQUALS" expression="Fundulus diaphanus"/>
+          <value operator="EQUALS" expression="Fundulus grandis"/>
+          <value operator="EQUALS" expression="Fundulus heteroclitus"/>
+          <value operator="EQUALS" expression="Fundulus jenkinsi"/>
+          <value operator="EQUALS" expression="Fundulus lucidae"/>
+          <value operator="EQUALS" expression="Fundulus majalis"/>
+          <value operator="EQUALS" expression="Fundulus similis"/>
+          <value operator="EQUALS" expression="Fundulus sp."/>
+          <value operator="EQUALS" expression="Gadus morrhua"/>
+          <value operator="EQUALS" expression="Gambusia affinis"/>
+          <value operator="EQUALS" expression="Gasterosteus aculeatus"/>
+          <value operator="EQUALS" expression="Gaus mexlaughs"/>
+          <value operator="EQUALS" expression="Harengula pensacolae"/>
+          <value operator="EQUALS" expression="Ictalurus catus"/>
+          <value operator="EQUALS" expression="Ictalurus furcatus"/>
+          <value operator="EQUALS" expression="Ictalurus melas"/>
+          <value operator="EQUALS" expression="Ictalurus natalis"/>
+          <value operator="EQUALS" expression="Ictalurus nebulosus"/>
+          <value operator="EQUALS" expression="Ictalurus punctatus"/>
+          <value operator="EQUALS" expression="Ictalurus sp."/>
+          <value operator="EQUALS" expression="Idus idus"/>
+          <value operator="EQUALS" expression="Jordanella floridae"/>
+          <value operator="EQUALS" expression="Lagodon rhomboides"/>
+          <value operator="EQUALS" expression="Lebistes reticulatus"/>
+          <value operator="EQUALS" expression="Leiostomus xanthurus"/>
+          <value operator="EQUALS" expression="Lepomis auritus"/>
+          <value operator="EQUALS" expression="Lepomis cyanellus"/>
+          <value operator="EQUALS" expression="Lepomis gibbosus"/>
+          <value operator="EQUALS" expression="Lepomis humilis"/>
+          <value operator="EQUALS" expression="Lepomis macrochirus"/>
+          <value operator="EQUALS" expression="Lepomis microlophus"/>
+          <value operator="EQUALS" expression="Lepomis pallidus"/>
+          <value operator="EQUALS" expression="Lepomis sp."/>
+          <value operator="EQUALS" expression="Leuciscus cephalus cabeda rissa"/>
+          <value operator="EQUALS" expression="Leuciscus idus"/>
+          <value operator="EQUALS" expression="Leuciscus idus melanotus"/>
+          <value operator="EQUALS" expression="Leuciscus rutilus"/>
+          <value operator="EQUALS" expression="Leuciscus sp."/>
+          <value operator="EQUALS" expression="Limanda aspera"/>
+          <value operator="EQUALS" expression="Limanda limanda"/>
+          <value operator="EQUALS" expression="Limanda sp."/>
+          <value operator="EQUALS" expression="Menidia beryllina"/>
+          <value operator="EQUALS" expression="Menidia menidia"/>
+          <value operator="EQUALS" expression="Menidia peninsulae"/>
+          <value operator="EQUALS" expression="Menidia sp."/>
+          <value operator="EQUALS" expression="Micropogon undulatus"/>
+          <value operator="EQUALS" expression="Micropterus dolomieui"/>
+          <value operator="EQUALS" expression="Micropterus salmoides"/>
+          <value operator="EQUALS" expression="Micropterus sp."/>
+          <value operator="EQUALS" expression="Misgurnus anguillicaudatus"/>
+          <value operator="EQUALS" expression="Morone chrysops"/>
+          <value operator="EQUALS" expression="Morone saxatilis"/>
+          <value operator="EQUALS" expression="Morone sp."/>
+          <value operator="EQUALS" expression="Mugil cephalus"/>
+          <value operator="EQUALS" expression="Mugil curema"/>
+          <value operator="EQUALS" expression="Mugil sp."/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="Notropis atherinoides"/>
+          <value operator="EQUALS" expression="Oncorhynchus gorbuscha"/>
+          <value operator="EQUALS" expression="Oncorhynchus keta"/>
+          <value operator="EQUALS" expression="Oncorhynchus kisutch"/>
+          <value operator="EQUALS" expression="Oncorhynchus mykiss"/>
+          <value operator="EQUALS" expression="Oncorhynchus mykiss (reported as Salmo gairdneri)"/>
+          <value operator="EQUALS" expression="Oncorhynchus nerka"/>
+          <value operator="EQUALS" expression="Oncorhynchus nerka kennerlyi"/>
+          <value operator="EQUALS" expression="Oncorhynchus sp."/>
+          <value operator="EQUALS" expression="Oncorhynchus tschawytscha"/>
+          <value operator="EQUALS" expression="Oryzias latipes"/>
+          <value operator="EQUALS" expression="Osmerus mordax"/>
+          <value operator="EQUALS" expression="Parophrys vetulus"/>
+          <value operator="EQUALS" expression="Perca flavescens"/>
+          <value operator="EQUALS" expression="Perca fluviatilis"/>
+          <value operator="EQUALS" expression="Perca sp."/>
+          <value operator="EQUALS" expression="Petromyzon fluviatilis"/>
+          <value operator="EQUALS" expression="Petromyzon marinus"/>
+          <value operator="EQUALS" expression="Petromyzon sp."/>
+          <value operator="EQUALS" expression="Phoxinus laevis"/>
+          <value operator="EQUALS" expression="Phoxinus phoxinus"/>
+          <value operator="EQUALS" expression="Phoxinus sp."/>
+          <value operator="EQUALS" expression="Pimephales notatus"/>
+          <value operator="EQUALS" expression="Pimephales promelas"/>
+          <value operator="EQUALS" expression="Pimephales sp."/>
+          <value operator="EQUALS" expression="Platypoecilus maculatus"/>
+          <value operator="EQUALS" expression="Pleuronectes platessa"/>
+          <value operator="EQUALS" expression="Poecilia latipinna"/>
+          <value operator="EQUALS" expression="Poecilia reticulata"/>
+          <value operator="EQUALS" expression="Poecilia sp."/>
+          <value operator="EQUALS" expression="Pogonias cromis"/>
+          <value operator="EQUALS" expression="Pomatomus saltatrix"/>
+          <value operator="EQUALS" expression="Pomoxis annularis"/>
+          <value operator="EQUALS" expression="Pomoxis nigromaculatus"/>
+          <value operator="EQUALS" expression="Prosopium williamsoni"/>
+          <value operator="EQUALS" expression="Pseudopleuronectes americanus"/>
+          <value operator="EQUALS" expression="Ptychocheilus oregonensis"/>
+          <value operator="EQUALS" expression="Rasbora heteromorpha"/>
+          <value operator="EQUALS" expression="Rhodeus sericeus"/>
+          <value operator="EQUALS" expression="Roccus americanus"/>
+          <value operator="EQUALS" expression="Rutilus rutilus"/>
+          <value operator="EQUALS" expression="Salmo aquabonita"/>
+          <value operator="EQUALS" expression="Salmo clarki"/>
+          <value operator="EQUALS" expression="Salmo gairdneri (new name: Oncorhynchus mykiss)"/>
+          <value operator="EQUALS" expression="Salmo irideus"/>
+          <value operator="EQUALS" expression="Salmo salar"/>
+          <value operator="EQUALS" expression="Salmo sp."/>
+          <value operator="EQUALS" expression="Salmo trutta"/>
+          <value operator="EQUALS" expression="Salvelinus alpinus"/>
+          <value operator="EQUALS" expression="Salvelinus fontinalis"/>
+          <value operator="EQUALS" expression="Salvelinus malma"/>
+          <value operator="EQUALS" expression="Salvelinus namaycush"/>
+          <value operator="EQUALS" expression="Salvelinus sp."/>
+          <value operator="EQUALS" expression="Sardinops sagax"/>
+          <value operator="EQUALS" expression="Sarotherodon mossambicus"/>
+          <value operator="EQUALS" expression="Scardinius erythrophthalmus"/>
+          <value operator="EQUALS" expression="Sciaenops ocellata"/>
+          <value operator="EQUALS" expression="Semolitus atromaculatus"/>
+          <value operator="EQUALS" expression="Sphaeroidus maculatus"/>
+          <value operator="EQUALS" expression="Stizostedion canadense"/>
+          <value operator="EQUALS" expression="Stizostedion v. vitreum"/>
+          <value operator="EQUALS" expression="Tinca sp."/>
+          <value operator="EQUALS" expression="Tinca tinca"/>
+          <value operator="EQUALS" expression="Tinca vulgaris"/>
+          <value operator="EQUALS" expression="Trutta iridea"/>
+          <value operator="LIKE" expression="other:*"/>
+        </string>
+        <numeric id="SE06.01.01.0560" fieldname="EC_FISHTOX.EXP_DURATION.VALUEUNIT_VALUE" label="Total exposure duration">
+          <value operator="GT" expression="0.0">
+            <unit phrasegroup="E04" phrase="2113"/>
+          </value>
+        </numeric>
+        <string id="SE06.01.01.0710" fieldname="EC_FISHTOX.EFFCONC.PHRASEOTHER_ENDPOINT" label="Effect concentrations, Endpoint">
+          <value operator="EQUALS" expression="LC10"/>
+          <value operator="EQUALS" expression="LC50"/>
+          <value operator="EQUALS" expression="LOEC"/>
+          <value operator="EQUALS" expression="NOEC"/>
+        </string>
+        <range id="SE06.01.01.0720" fieldname="EC_FISHTOX.EFFCONC.PRECISION_LOQUALIFIER" label="Effect concentrations, Effect conc.">
+          <value operator="OVERLAPPING" lower="0.0" upper="100000.0">
+            <unit phrasegroup="E05" phrase="2098"/>
+          </value>
+        </range>
+        <string id="SE06.01.01.0791" fieldname="EC_FISHTOX.EFFCONC.PHRASEOTHER_BASIS_EFFECT" label="Effect concentrations, Basis for effect">
+          <value operator="EQUALS" expression="behaviour"/>
+          <value operator="EQUALS" expression="mobility"/>
+          <value operator="EQUALS" expression="morphology"/>
+          <value operator="EQUALS" expression="mortality"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="weight"/>
+          <value operator="EQUALS" expression="other:"/>
+        </string>
+      </criteria>
+    </queryblock>
+    <operator level="1" op="OR"/>
+    <queryblock level="1" section="EC_ALGAETOX" text="Toxicity to aquatic algae and cyanobacteria">
+      <path>
+        <pathelement id="TR.SE00.00"/>
+        <pathelement id="QU.SE.DATA_ECO"/>
+        <pathelement id="QU.SE.ENV_AQUATIC"/>
+        <pathelement id="QU.SE.EC_ALGAETOX"/>
+      </path>
+      <criteria>
+        <string id="SE.REF.0180" fieldname="EC_ALGAETOX.ADMIN.STUDYRESULTTYPE" label="Study result type">
+          <value operator="EQUALS" expression="experimental result"/>
+        </string>
+        <string id="SE.REF.0200" fieldname="EC_ALGAETOX.ADMIN.RELIABILITY" label="Reliability">
+          <value operator="EQUALS" expression="1 (reliable without restriction)"/>
+          <value operator="EQUALS" expression="2 (reliable with restrictions)"/>
+          <value operator="EQUALS" expression="3 (not reliable)"/>
+          <value operator="EQUALS" expression="4 (not assignable)"/>
+        </string>
+        <string id="SE06.01.05.0350" fieldname="EC_ALGAETOX.GUIDELINE.QUALIFIER" label="Test guideline, Qualifier">
+          <value operator="EQUALS" expression="according to"/>
+          <value operator="EQUALS" expression="equivalent or similar to"/>
+        </string>
+        <string id="SE06.01.05.0360" fieldname="EC_ALGAETOX.GUIDELINE.PHRASEOTHER_GUIDELINE" label="Test guideline, Guideline">
+          <value operator="EQUALS" expression="EPA OPP 122-2 (Algal Toxicity, Tiers I and II)"/>
+          <value operator="EQUALS" expression="EPA OPP 123-3 (Algal Toxicity, Tiers I and II)"/>
+          <value operator="EQUALS" expression="EPA OPPTS 850.5400 (Algal Toxicity, Tiers I and II)"/>
+          <value operator="EQUALS" expression="EPA OTS 797.1050 (Algal Toxicity, Tiers I and II)"/>
+          <value operator="EQUALS" expression="EU Method C.3 (Algal Inhibition test)"/>
+          <value operator="EQUALS" expression="ISO 10253 (Water quality - Marine Algal Growth Inhibition Test with Skeletonema costatum and Phaeodactylum tricornutum)"/>
+          <value operator="EQUALS" expression="ISO 8692 (Water Quality - Fresh Water Algal Growth Inhibition Test with Scenedesmus subspicatus and Selenastrum capricornutum)"/>
+          <value operator="EQUALS" expression="OECD Guideline 201 (Alga, Growth Inhibition Test)"/>
+        </string>
+        <string id="SE06.01.05.0530" fieldname="EC_ALGAETOX.TESTTYPE_AQUATOX.PHRASEOTHER_LIST_POP" label="Test type">
+          <value operator="EQUALS" expression="flow-through"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="semi-static"/>
+          <value operator="EQUALS" expression="static"/>
+          <value operator="LIKE" expression="other:*"/>
+        </string>
+        <numeric id="SE06.01.05.0560" fieldname="EC_ALGAETOX.EXP_DURATION.VALUEUNIT_VALUE" label="Total exposure duration">
+          <value operator="GT" expression="0.0">
+            <unit phrasegroup="E04" phrase="2113"/>
+          </value>
+        </numeric>
+        <string id="SE06.01.05.0710" fieldname="EC_ALGAETOX.EFFCONC.PHRASEOTHER_ENDPOINT" label="Effect concentrations, Endpoint">
+          <value operator="EQUALS" expression="EC10"/>
+          <value operator="EQUALS" expression="EC50"/>
+          <value operator="EQUALS" expression="IC10"/>
+          <value operator="EQUALS" expression="IC50"/>
+          <value operator="EQUALS" expression="LOEC"/>
+          <value operator="EQUALS" expression="NOEC"/>
+        </string>
+        <range id="SE06.01.05.0720" fieldname="EC_ALGAETOX.EFFCONC.PRECISION_LOQUALIFIER" label="Effect concentrations, Effect conc.">
+          <value operator="OVERLAPPING" lower="0.0" upper="100000.0">
+            <unit phrasegroup="E05" phrase="2098"/>
+          </value>
+        </range>
+        <string id="SE06.01.05.0790" fieldname="EC_ALGAETOX.EFFCONC.PHRASEOTHER_BASIS_EFFECT" label="Effect concentrations, Basis for effect">
+          <value operator="EQUALS" expression="biomass"/>
+          <value operator="EQUALS" expression="cell number"/>
+          <value operator="EQUALS" expression="growth rate"/>
+          <value operator="EQUALS" expression="no data"/>
+          <value operator="EQUALS" expression="other:"/>
+        </string>
+      </criteria>
+    </queryblock>
+  </blocks>
+</expression>
